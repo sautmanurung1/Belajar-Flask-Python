@@ -1,5 +1,19 @@
 from flask import Flask, render_template, url_for, redirect, request
+from flask_mysqldb import MySQL
+
 app = Flask(__name__)
+
+# config database
+app.config['MYSQL_HOST'] = 'localhost'
+app.config['MYSQL_USER'] = 'root'
+app.config['MYSQL_PASSWORD'] = 'Sautmanurung234'
+app.config['MYSQL_DB'] = 'belajarflask'
+
+mysql = MySQL(app)
+
+@app.route('/', methods=['GET', 'POST'])
+def dashboard():
+    return render_template('logins.html')
 
 @app.route('/login', methods=['GET', 'POST'])
 def login():
