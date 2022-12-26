@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dosen Page</title>
+    <link rel="stylesheet" type=text/css href="{{ url_for('static', filename='bootstrap.main.css') }}">
+</head>
+
+<body>
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-12"></div>
+            <h2>Welcome Dosen</h2>
+
+            <button type="button" class="btn btn-primary float-right">Tambah Dosen</button>
+
+            <table class="table">
+                <thead>
+                    <tr>
+                        <th scope="col">#</th>
+                        <th scope="col">NIP</th>
+                        <th scope="col">Nama Dosen</th>
+                        <th scope="col">Jurusan</th>
+                        <th scope="col">Aksi</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <th scope="row">1</th>
+                        <td>Faqih</td>
+                        <td>Telkom University</td>
+                        <td>Information System</td>
+                        <td><button type="button" class="btn btn-warning btn-sm">Edit</button> <button type="button"
+                                class="btn btn-danger btn-sm">Delete</button></td>
+                    </tr>
+                    <tr>
+                        <th scope="row">2</th>
+                        <td>Aulia</td>
+                        <td>Telkom University</td>
+                        <td>Informatics</td>
+                        <td><button type="button" class="btn btn-warning btn-sm">Edit</button> <button type="button"
+                                class="btn btn-danger btn-sm">Delete</button></td>
+                    </tr>
+                    <tr>
+                        <th scope="row">3</th>
+                        <td>Ali Fauzi</td>
+                        <td>Brawijaya University</td>
+                        <td>Informatics</td>
+                        <td><button type="button" class="btn btn-warning btn-sm">Edit</button> <button type="button"
+                                class="btn btn-danger btn-sm">Delete</button></td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+    </div>
+    </div>
+</body>
+
+</html>
